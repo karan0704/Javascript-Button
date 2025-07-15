@@ -1,9 +1,16 @@
 let count = 0;
 
-const button = document.getElementById('clickButton');
-const countDisplay = document.getElementById('count');
+const clickbutton = document.getElementById("clickButton");
+const countDisplay = document.getElementById("count");
 
-button.addEventListener('click', function() {
-    count++;
-    countDisplay.textContent = count;
+clickbutton.addEventListener("click", function () {
+  count++;
+  countDisplay.textContent = count;
+});
+
+const resetButton = document.getElementById("resetButton");
+
+resetButton.addEventListener("click", function () {
+  count = 0;
+  countDisplay.textContent = count;
 });
