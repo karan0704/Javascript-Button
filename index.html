@@ -4,18 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="features/clear-note/clearNote.css"/>
+    <link rel="stylesheet" href="features/save-note/saveNote.css"/>
+
   </head>
   <body>
-    <h1>Hello Welcome here.....</h1>
+    <h1>Note App...</h1>
     <br/>
 
-    <p>You clicked <span id="count">0</span> times.</p>
+    <textarea id="noteArea" placeholder="Write your note here" cols="50" rows="10"></textarea>
 
-    <button id="clickButton">Click Me</button>
-    <button id="resetButton">Reset Count</button>
-    <button id="darkModeButton">Toggle Dark Mode</button>
+    <button id="save-Btn">Save Note</button>
+    <button id="clear-Btn">Clear Note</button>
 
-    <script src="script.js"></script>
+    <h3>Saved Note:</h3>
+    <div id="display-notes" style="white-space: pre-wrap; border: 1px solid #cccccc;padding: 10px; min-height: 80px;"></div>
+
+
+    <script src="features/save-note/saveNote.js"></script>
+    <script src="features/clear-note/clearNote.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>
